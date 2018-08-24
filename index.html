@@ -1,0 +1,29 @@
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<link href="src/index.css"/>
+</head>
+
+<body>
+	<div id="drop-area">
+		<form class="my-form" action="">
+			<p>To upload images, click the button or drag the selected files onto the dashed field</p>
+			<input type="file" id="fileElement" multiple accept="image/*"/>
+			<label class="button" role="button" tabindex=0 for="fileElement">Select files</label>
+		</form>
+		<div id="gallery"></div>
+		<progress id="progress-bar" max=100 value=20 hidden></progress>		
+		<div id="imageList">
+			<div class="imageInfo" hidden>
+				<span class="imageTitle"></span>
+				<button class="button_transparent js_deleteImg"></button>
+			</div>
+		</div>							
+	</div>
+
+	<script src="src/index.js"></script>
+</body>
+
+</html>
